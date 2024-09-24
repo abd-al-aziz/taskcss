@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+
+
+#div1 {
+  position: relative;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+#div2 {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  z-index: 2;
+  background-color: #ff0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+#div3 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #0ff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+
+.container {
+  position: relative; 
+}
+
+.box1, .box2, .box3 , .box4{
+  position: absolute; 
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.box1 {
+  z-index: 1; 
+  top: 20px;
+  left: 20px;
+  background-color: red;
+}
+
+.box2 {
+  z-index: 2; 
+  top: 40px;
+  left: 40px;
+  background-color: blue;
+}
+
+.box3 {
+  z-index: 3;
+  top: 60px; 
+  left: 60px;
+  background-color: yellow;
+}
+.box4{
+  z-index: 4;
+  top: 80px;
+  left: 80px;
+  background-color: green;
+}
+
+  </style>
+</head>
+<body>
+  
+  <div id="div1">)Div1 position=Relative</div>
+<div id="div2">)Div2 position=fixed & z-index </div>
+<div id="div3">Div3 position=absolute  </div>
+  </div>
+  <div class="container">
+    <div class="box1"> 1</div>
+    <div class="box2"> 2</div>
+    <div class="box3"> 3</div>
+    <div class="box4"> 4</div>
+  </div>
+</body>
+</html>

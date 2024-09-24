@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+}
+
+.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  background-color: red;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+  background-color: blue;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  background-color: green;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  background-color: yellow;
+}
+
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="box top-left">absolute</div>
+        <div class="box top-right">absolute</div>
+        <div class="box bottom-right">absolute</div>
+        <div class="box bottom-left">absolute</div>
+      </div>
+</body>
+</html>

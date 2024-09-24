@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.fixed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  z-index: 10;
+  border: 5px solid blue;
+  text-align: center;
+  line-height: 200px;
+  font-size: 20px;
+}
+
+.absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="fixed">Center 😊</div>
+  <div class="absolute"></div>
+</div>
+
+</body>
+</html>
